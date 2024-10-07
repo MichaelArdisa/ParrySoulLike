@@ -63,7 +63,6 @@ public class PMove : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         direction = new Vector3(x, 0f, z).normalized;
-        anim.SetTrigger("Idle");
 
         if (direction.magnitude >= 0.1f)
         {
@@ -80,6 +79,10 @@ public class PMove : MonoBehaviour
             anim.SetTrigger("Run");
             ctrl.Move(moveDir.normalized * pSpeed * Time.deltaTime);
             speed = moveDir * pSpeed;
+
+        } else
+        {
+            anim.SetTrigger("Idle");
         }
 
         // Jump
@@ -100,6 +103,7 @@ public class PMove : MonoBehaviour
 
             StartCoroutine(dashMove(dodge, dodgeDistance));
             Invoke(nameof(dodgeReset), dodgeCD);
+        
         }
     }
 
