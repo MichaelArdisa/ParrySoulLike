@@ -93,7 +93,7 @@ public class PMove : MonoBehaviour
         ctrl.Move(velo * Time.deltaTime);
 
         // Dodge
-        if (!isDodging && canDodge && Input.GetButtonDown("Dodge"))
+        if (!isDodging && canDodge && isGround && Input.GetButtonDown("Dodge"))
         {
             anim.SetTrigger("Dodge");
 
@@ -101,13 +101,13 @@ public class PMove : MonoBehaviour
             isDodging = true;
             Vector3 dodge = transform.forward;
 
-            StartCoroutine(dashMove(dodge, dodgeDistance));
+            StartCoroutine(dodgeMove(dodge, dodgeDistance));
             Invoke(nameof(dodgeReset), dodgeCD);
         
         }
     }
 
-    IEnumerator dashMove(Vector3 dodge, float dodgeDist)
+    IEnumerator dodgeMove(Vector3 dodge, float dodgeDist)
     {
         dodge = dodge * dodgeSpeed;
         float count = 0;
