@@ -56,6 +56,8 @@ public class PCombat : MonoBehaviour
             pm.dodgeSpeed = 0f;
             pm.rotSmoothTime = 3f;
             pm.canDodge = false;
+            pm.isGround = false;
+
 
             // aims player to what the camera is aiming at
             Vector3 dirToAim = aimPos.position - transform.position;
@@ -83,6 +85,7 @@ public class PCombat : MonoBehaviour
         pm.dodgeSpeed = orDodgeSpeed;
         pm.rotSmoothTime = orRotSmoothTime;
         pm.canDodge = true;
+        pm.isGround = true;
     }
 
     void parryMReset()
