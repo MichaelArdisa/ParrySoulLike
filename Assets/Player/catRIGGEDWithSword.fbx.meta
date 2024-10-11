@@ -1,0 +1,529 @@
+fileFormatVersion: 2
+guid: 3ff688bc202fbf34cbacd1906c116039
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt.001
+    second: {fileID: 2100000, guid: 74c1999035dfae142918c07c9b5c4cc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Idung.001
+    second: {fileID: 2100000, guid: 5a2b194f1976c084a892010e796c6aee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Innerbody.001
+    second: {fileID: 2100000, guid: 2d4027c5b9b8d5847a32d34c9593eb91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kepala.001
+    second: {fileID: 2100000, guid: 4caa4f1013d8d5b4cb02514077f84742, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light iron
+    second: {fileID: 2100000, guid: 4f775bd4657a4d54f88ea32fa9025387, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Telinga.001
+    second: {fileID: 2100000, guid: 8f9c400896fee30429913938c9cb2c08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: d39d35b4bfb176e4390aecd61a116b31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm out.001
+    second: {fileID: 2100000, guid: da03cc4061878ee4fa9cc917bee9a0bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm shirinner.001
+    second: {fileID: 2100000, guid: 3a913bd8d36858449b4e1372d8083d70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm.001
+    second: {fileID: 2100000, guid: 1fa0b2659673c56488778ecb6ad4bbb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: belt.001
+    second: {fileID: 2100000, guid: 5508f5cc819977d41b8176f1b876d7dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: feet.001
+    second: {fileID: 2100000, guid: 6420df7f7977d224b8173e7aff2801e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hand.001
+    second: {fileID: 2100000, guid: 0132fa3e6fde4f4439b3e458f336bdbe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hiasan dalem .001
+    second: {fileID: 2100000, guid: 6c85af8a54fd2d74d8280f5ed15a6a2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hiasan syal .001
+    second: {fileID: 2100000, guid: 450f50c5dacc9c649a4d45a8f3cbc5f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mainbody.001
+    second: {fileID: 2100000, guid: 6eeff4c403e77dd4d9836bd3842205b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: syal.001
+    second: {fileID: 2100000, guid: ef46a45d068e9314fbab52832e42f001, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: toes.001
+    second: {fileID: 2100000, guid: 4bfaa6512b136a545a652c266adaa243, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Belt_BaseColor
+    second: {fileID: 2800000, guid: 71958d1d1e78dab4ab137dda6b07d22b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Belt_Emissive
+    second: {fileID: 2800000, guid: a4b60f79b2c82cf499b43df8343a80f8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Belt_Metallic
+    second: {fileID: 2800000, guid: d43ad2f3baee6004292a1e1f2f16143b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Belt_Normal
+    second: {fileID: 2800000, guid: 72f6b56de085e2445ba22aca19bb4076, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Belt_Roughness
+    second: {fileID: 2800000, guid: ebe6302a1aa6cff41914e15fa9cd8563, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Innerbody_BaseColor
+    second: {fileID: 2800000, guid: bfcf7dfa2c134c64c962e60c45fc0764, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Innerbody_Emissive
+    second: {fileID: 2800000, guid: cad61d650727fcf4197b92e42e0ce505, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Innerbody_Metallic
+    second: {fileID: 2800000, guid: 36ef0e6382347c5448c81b6a2c2e0d7d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Innerbody_Normal
+    second: {fileID: 2800000, guid: 5a377028814331446bddd715e56f11c6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Innerbody_Roughness
+    second: {fileID: 2800000, guid: 1187fbe191a64654fa611304a8d17ab5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Kepala_BaseColor
+    second: {fileID: 2800000, guid: 513d4154fce26704982650b8c815dadb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Kepala_Emissive
+    second: {fileID: 2800000, guid: 09391b24616f4de4989fc2f56e294fd0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Kepala_Metallic
+    second: {fileID: 2800000, guid: 4c9eafbe28ed0fe42acbb24ce6c50f82, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Kepala_Normal
+    second: {fileID: 2800000, guid: dd9196a4d702e85489b207954d774231, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Kepala_Roughness
+    second: {fileID: 2800000, guid: 1ae0ab9e1c3a53a40a7fc3168b630b71, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Telinga_BaseColor
+    second: {fileID: 2800000, guid: 4ae2e0382a4139443bc688054746c2a2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Telinga_Emissive
+    second: {fileID: 2800000, guid: 1880f47daf04a3c4e97f4ecc16f119ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Telinga_Metallic
+    second: {fileID: 2800000, guid: 23c9a4e8c476e794bb2dc9bc2e91d89e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Telinga_Normal
+    second: {fileID: 2800000, guid: 78aae8a047d38b6429f3c22c6a87a14d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_Telinga_Roughness
+    second: {fileID: 2800000, guid: 31478416616eb024ba0117735e5251b9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm out_BaseColor
+    second: {fileID: 2800000, guid: ac452ff31cd2341458576f3b03041e87, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm out_Emissive
+    second: {fileID: 2800000, guid: 42a8668d3675966448f92f1b0ba8bbe8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm out_Metallic
+    second: {fileID: 2800000, guid: 6eb97ef0bfe514745b1e0e005afe3f28, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm out_Normal
+    second: {fileID: 2800000, guid: 2d913a3b3175123449f187cff093b59f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm out_Roughness
+    second: {fileID: 2800000, guid: ee49c4517717fc8478ff65ff377f7a36, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm shirinner_BaseColor
+    second: {fileID: 2800000, guid: 43426a48712b3de4e9d1b204f286e1bb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm shirinner_Emissive
+    second: {fileID: 2800000, guid: ad1e2c4b10e62fb41ab92636bc8f85db, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm shirinner_Metallic
+    second: {fileID: 2800000, guid: dcc00ee9b5359d84c856168f5cb04b8b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm shirinner_Normal
+    second: {fileID: 2800000, guid: 01336e104c1debf49be41af89d536370, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm shirinner_Roughness
+    second: {fileID: 2800000, guid: 388970ead16706945af07072ea894c5a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm_BaseColor
+    second: {fileID: 2800000, guid: 6d0acf3636ff5f642a92dc7a9b215c5c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm_Emissive
+    second: {fileID: 2800000, guid: 6396f9a74e506be40a5ab44f1d90e4d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm_Metallic
+    second: {fileID: 2800000, guid: 065bd40516655c54b93fa7f9173f50cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm_Normal
+    second: {fileID: 2800000, guid: bf0c39ff9f349474b8dc272b54da4245, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_arm_Roughness
+    second: {fileID: 2800000, guid: 8c6718369134794469e16eda4b6b6565, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_feet_BaseColor
+    second: {fileID: 2800000, guid: 78c7f0f9b73fdfe4baf5772ab058ef99, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_feet_Emissive
+    second: {fileID: 2800000, guid: 69df41643f7a61949a2def6bb4111cf7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_feet_Metallic
+    second: {fileID: 2800000, guid: f891c55dd716e934c84c70192b02fcad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_feet_Normal
+    second: {fileID: 2800000, guid: 9030dfa51578fde47a7bf2d1dffba4c6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_feet_Roughness
+    second: {fileID: 2800000, guid: 466f301e868925d4b8f9aa2ad33b20fc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_hand_BaseColor
+    second: {fileID: 2800000, guid: 0c18b766aedf831488dfa5d7fccf3c49, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_hand_Emissive
+    second: {fileID: 2800000, guid: 8964d832a3d730046baee84815c70925, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_hand_Metallic
+    second: {fileID: 2800000, guid: c20aefec9e9514a47b09114a05ffd0f0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_hand_Normal
+    second: {fileID: 2800000, guid: 545a970e2f47606438c2aa094da795be, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_hand_Roughness
+    second: {fileID: 2800000, guid: 1e4b3e2059b32b9479aba9da46bd19d3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_hiasan syal _BaseColor
+    second: {fileID: 2800000, guid: bd87b8650c90dc8429a7d67e49b2b9cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_hiasan syal _Emissive
+    second: {fileID: 2800000, guid: c3ab777b037d31f40a13c01f7ebf24f4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_hiasan syal _Metallic
+    second: {fileID: 2800000, guid: 7392c275bed80d0498a33cb9192e2430, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_hiasan syal _Normal
+    second: {fileID: 2800000, guid: 37cb1e507432d474880a43a4385737eb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_hiasan syal _Roughness
+    second: {fileID: 2800000, guid: 186683f0c812cd04ab503dbdb698417a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_mainbody_BaseColor
+    second: {fileID: 2800000, guid: 5f8364aeeb46c1e448a76931680de397, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_mainbody_Emissive
+    second: {fileID: 2800000, guid: 1b0a9358246d2e24aab403f3af5f7b26, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_mainbody_Metallic
+    second: {fileID: 2800000, guid: b26bad71506e5f24bbd45b123cd96eee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_mainbody_Normal
+    second: {fileID: 2800000, guid: f599f25eadbf5f741b265acbd8e8d631, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_mainbody_Roughness
+    second: {fileID: 2800000, guid: b11817022c1f870468fe404a5a83701c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_syal_BaseColor
+    second: {fileID: 2800000, guid: fdf49fe7361ebbb4cb0c30868be2220a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_syal_Emissive
+    second: {fileID: 2800000, guid: 5164f31de66cdbd4ab9d52403ca52420, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_syal_Metallic
+    second: {fileID: 2800000, guid: bcd7d3ca87588cd47a2640540e5351a4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_syal_Normal
+    second: {fileID: 2800000, guid: 70d7b4f9f95d1b043ae4a8a8bd356a2f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_syal_Roughness
+    second: {fileID: 2800000, guid: 0b55f14d2e7c8434e835c1507c4467ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_toes_BaseColor
+    second: {fileID: 2800000, guid: ba5362a34ecb02540b787881df6aecf1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_toes_Emissive
+    second: {fileID: 2800000, guid: bc60f21fcb32adc4aa01d781cb1e2d30, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_toes_Metallic
+    second: {fileID: 2800000, guid: e8b9dfb5ba9a4f545aca60fcab48209a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_toes_Normal
+    second: {fileID: 2800000, guid: 538d7030a3988324a8e0d1022afe52bd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: catJGF2_toes_Roughness
+    second: {fileID: 2800000, guid: fecd3d7ac87cff54e942db974acbb987, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tiled_plane_DefaultMaterial_Normal
+    second: {fileID: 2800000, guid: fec1c1482f5e9bc4096d34e8ea107cd2, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

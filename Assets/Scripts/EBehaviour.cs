@@ -25,9 +25,6 @@ public class EBehaviour : MonoBehaviour
 
     [Header("Validations")]
     public bool isHit;
-    //public bool isMalware;
-    //public bool isAdware;
-    //public bool isPopUp;
 
     // Start is called before the first frame update
     void Start()
@@ -46,14 +43,14 @@ public class EBehaviour : MonoBehaviour
 
         if (dirToPlayer != Vector3.zero)
         {
-            anim.SetTrigger("orcWalk");
+            anim.SetTrigger("EWalk");
 
             Quaternion targetRotation = Quaternion.LookRotation(dirToPlayer, Vector3.up);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotSpeed * Time.deltaTime);
         
         } else
         {
-            anim.SetTrigger("orcIdle");
+            anim.SetTrigger("EIdle");
         }
     }
 }

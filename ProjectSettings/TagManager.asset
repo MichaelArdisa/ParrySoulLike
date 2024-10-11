@@ -6,6 +6,8 @@ TagManager:
   tags:
   - HPnumber
   - ShieldEffect
+  - Enemy
+  - RockSpawnPoint
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - Ground
   - Player
   - Enemy
-  - 
+  - Projectile
   - 
   - 
   - 

@@ -7,11 +7,14 @@ public class ECombat : MonoBehaviour
 {
     [Header("Refs")]
     public Animator anim;
+    public Rigidbody enemyRB;
     public Transform playerPos;
     public Transform pos;
-    public Transform atkPos;
+    //public Transform atkPos;
+    public ParticleSystem atkParticle;
     public EBehaviour eb;
     public PBehaviour pb;
+    public LaunchRock lr;
 
     [Header("Position Values")]
     [SerializeField] private Vector3 difference;
@@ -19,11 +22,14 @@ public class ECombat : MonoBehaviour
     //private float activateDistance = 20f;
 
     [Header("Atk Values")]
-    public float atkRangeE;
+    public int randomAtk;
+    public List<attackType> atkTypes = new List<attackType>();
+    //public float atkRangeE;
     public int atkDamageE;
     public float atkRateE;
+    public float atkProjectileRateE;
     public float atkRadE;
-    public float atkDelayE;
+    public float atkShootDelayE;
     public float isAttackingDelayE;
 
     [Header("Validations")]
@@ -40,10 +46,13 @@ public class ECombat : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        enemyRB = GetComponent<Rigidbody>();
         playerPos = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         pos = GetComponent<Transform>();
+        //atkParticle = atkPos.GetComponent<ParticleSystem>();
         eb = GetComponent<EBehaviour>();
         pb = GameObject.FindGameObjectWithTag("Player").GetComponent<PBehaviour>();
+        lr = GameObject.FindGameObjectWithTag("RockSpawnPoint").GetComponent<LaunchRock>();
 
         //orSpeed = eb.speed;
         orRotSpeed = eb.rotSpeed;
@@ -62,6 +71,15 @@ public class ECombat : MonoBehaviour
             {
                 attack();
                 nextAtkTime = Time.time + 1f / atkRateE;
+            
+            } else if (distance > atkRadE)
+            {
+                if (distance < 25f && distance > 15f) // distance for the most accurate throws
+                {
+                    projectileAttack();
+                    Debug.Log("jalan");
+                    nextAtkTime = Time.time + 1f / atkProjectileRateE;
+                } 
             }
         }
     }
@@ -70,17 +88,27 @@ public class ECombat : MonoBehaviour
     {
         isAttacking = true;
 
-        anim.SetTrigger("orcAtk1");
-        Invoke(nameof(attackHit), atkDelayE);
+        randomAtk = Random.Range(0, atkTypes.Count);
+        string i = randomAtk.ToString();
+        anim.SetTrigger("EAtk" + i);
 
-        eb.rotSpeed = eb.rotSpeed * 0.05f;
-        Invoke(nameof(resetAtk), atkDelayE + isAttackingDelayE);
+        Invoke(nameof(attackHit), atkTypes[randomAtk].atkHitDelay);
+        
+        if (i == "2")
+            enemyRB.isKinematic = false;
+        else
+            enemyRB.isKinematic = true;
+
+        eb.rotSpeed = eb.rotSpeed * 0.005f;
+        Invoke(nameof(resetAtk), atkTypes[randomAtk].atkHitDelay + atkTypes[randomAtk].isAtkingDelay);
     }
 
     public void attackHit() //ini bisa ditambahin param utk gonta ganti atkpos.pos, atkRange ,tp ntar pake ienum
     {
+        atkTypes[randomAtk].vfx.Play();
+
         Collider[] hitPlayer;
-        hitPlayer = Physics.OverlapSphere(atkPos.position, atkRangeE, playerLayer);
+        hitPlayer = Physics.OverlapSphere(atkTypes[randomAtk].atkPos.position, atkTypes[randomAtk].range, playerLayer);
 
         foreach (Collider player in hitPlayer)
         {
@@ -94,14 +122,52 @@ public class ECombat : MonoBehaviour
     public void resetAtk()
     {
         eb.rotSpeed = orRotSpeed;
+        enemyRB.isKinematic = false;
         isAttacking = false;
     }
 
+    public void projectileAttack()
+    {
+        isAttacking = true;
+        lr.rockAtHand.SetActive(true);
+        anim.SetTrigger("EAtkProjectile");
+        //Invoke(nameof(resetRock), atkShootDelayE * 0.9f);
+        Invoke(nameof(attackShoot), atkShootDelayE);
+
+        enemyRB.isKinematic = true;
+        eb.rotSpeed = eb.rotSpeed * 0.005f;
+        Invoke(nameof(resetAtk), atkShootDelayE + isAttackingDelayE);
+    }
+
+    public void attackShoot()
+    {
+        // throw rock
+        lr.rockAtHand.SetActive(false);
+        lr.launchRock();
+    }
+
+    //public void resetRock()
+    //{
+    //    lr.rockAtHand.SetActive(false);
+    //}
+
     private void OnDrawGizmosSelected()
     {
-        if (atkPos == null)
+        if (atkTypes[randomAtk].atkPos == null)
             return;
 
-        Gizmos.DrawWireSphere(atkPos.position, atkRangeE);
+        Gizmos.DrawWireSphere(atkTypes[randomAtk].atkPos.position, atkTypes[randomAtk].range);
+    }
+
+    [System.Serializable]
+    public class attackType
+    {
+        public string name;
+        public float damage;
+        public float range;
+        public float atkHitDelay;
+        public float isAtkingDelay;
+        public Transform atkPos;
+        public ParticleSystem vfx;
     }
 }

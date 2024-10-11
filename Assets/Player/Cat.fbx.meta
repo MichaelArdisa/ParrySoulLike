@@ -1,0 +1,329 @@
+fileFormatVersion: 2
+guid: 2a10831700c933747b7090efbcde8a2b
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt_001_Pbr
+    second: {fileID: 2100000, guid: 9ee04c2ca5db3e04d9db47ac05282396, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Idung_001_Pbr
+    second: {fileID: 2100000, guid: b831b316c8caf854ea8a4d79cb13a27d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Innerbody_001_Pbr
+    second: {fileID: 2100000, guid: 9b6904ebe90fd384085a889255bd65d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kepala_001_Pbr
+    second: {fileID: 2100000, guid: f1e1bef3f88889442a3aad1cc5dc734e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Telinga_001_Pbr
+    second: {fileID: 2100000, guid: d80ed994dd12c944680c07b3a1d1220f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_001_Pbr
+    second: {fileID: 2100000, guid: 5556b580966ec7244852c66e8a262a96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_out_001_Pbr
+    second: {fileID: 2100000, guid: 2de0c86cc84aaca43bb18e4adcded80d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm_shirinner_001_Pbr
+    second: {fileID: 2100000, guid: f64c404dd12744c4a9a38f44757af700, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: belt_001_Pbr
+    second: {fileID: 2100000, guid: 5f9f900710c33374eb050af6934a0d73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: feet_001_Pbr
+    second: {fileID: 2100000, guid: 2a26279eb8f15d243b8b3fee2afd8651, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hand_001_Pbr
+    second: {fileID: 2100000, guid: 07bf3da813a43e84fb8e557bdbf1dbab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hiasan_dalem__001_Pbr
+    second: {fileID: 2100000, guid: 3d4b039d5f5d7a64aba244e449c35fcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hiasan_syal__001_Pbr
+    second: {fileID: 2100000, guid: f0e3bb24bb27a8043a40383aeb186dd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mainbody_001_Pbr
+    second: {fileID: 2100000, guid: 0a41a0fb158f4594382541787390edcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: syal_001_Pbr
+    second: {fileID: 2100000, guid: dbbbcf7362b8aa143a8d54ca32df668a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: toes_001_Pbr
+    second: {fileID: 2100000, guid: b65f1207cccd21841ab9aa1898192da1, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Idung_001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: 5246e9918b08e9244834afed87563124, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Idung_001_Pbr_Normal
+    second: {fileID: 2800000, guid: 269adeb3379daea41ae708994b3a52ef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Innerbody_001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: ec017555951ce974f9aa9e4558f97469, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Innerbody_001_Pbr_Normal
+    second: {fileID: 2800000, guid: 6616fa34f8403e9419008ccf5c8a64d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kepala_001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: c3c1c4c9e07c8524090ed1f78170acb9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kepala_001_Pbr_Normal
+    second: {fileID: 2800000, guid: 176ac2ecb8ce04e43b7fbc267783c143, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Telinga_001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: 6cebbe8064e6f564dba6bc59d62ca317, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Telinga_001_Pbr_Normal
+    second: {fileID: 2800000, guid: e4c6f0c2e285f704d9c4eb52ac8f7ad1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: arm_001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: 2fd2f23d340671b438df67c8f75f55d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: arm_001_Pbr_Normal
+    second: {fileID: 2800000, guid: c92a11ff9732caf4b88333627e304dcc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: arm_out_001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: 05bf762241d162547bdc4f4ce0eeeb6d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: arm_out_001_Pbr_Normal
+    second: {fileID: 2800000, guid: 4ff95e6a8b1193f40955e3077ee7abdd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: arm_shirinner_001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: 331f12d01a3c644409855be28a70d73b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: arm_shirinner_001_Pbr_Normal
+    second: {fileID: 2800000, guid: cc2da932dbc2e1e44aecffea18cc848c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: belt_001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: d8e6b1b5dee917444ac16b959350e510, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: belt_001_Pbr_Normal
+    second: {fileID: 2800000, guid: 854c92a61e3bf7f44a2a18a0eca75ef2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: feet_001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: 27c51111447099848880b6775650c934, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: feet_001_Pbr_Normal
+    second: {fileID: 2800000, guid: 6129be82127f2dc4da1e2afbb3e9a4fc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hand_001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: 0388e9fffd1e61a418d5a9db4e199fa5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hand_001_Pbr_Normal
+    second: {fileID: 2800000, guid: 14f3a8d24940e8446837c239faa43a01, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hiasan_syal__001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: 2406509d09ced4044864c89b866a35bf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hiasan_syal__001_Pbr_Normal
+    second: {fileID: 2800000, guid: 2a51044c8a3d0f941aca1d94a1b60529, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mainbody_001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: 2c6a1658c27cb6643ae8f9e5f4aba378, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mainbody_001_Pbr_Normal
+    second: {fileID: 2800000, guid: 5932d74282e317c40b1de2867b2635ec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: syal_001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: aa5ba13b6273e454c9321ea14093abf8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: syal_001_Pbr_Normal
+    second: {fileID: 2800000, guid: e603a8da7edd0734cafb299286e615cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toes_001_Pbr_Diffuse
+    second: {fileID: 2800000, guid: 0f4d1e7a9ca212c48a668d8567c4fadb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toes_001_Pbr_Normal
+    second: {fileID: 2800000, guid: d18a0c4a094ccc24a84cba6c108e63ba, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

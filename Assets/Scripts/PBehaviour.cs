@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PBehaviour : MonoBehaviour
 {
+    public GameObject actualSword;
+    public GameObject backSword;
+
     // Start is called before the first frame update
     void Start()
     {
