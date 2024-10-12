@@ -9,6 +9,7 @@ public class PCombat : MonoBehaviour
     [Header("Refs")]
     public GameObject shieldEffect;
     public ParticleSystem slashEffect;
+    public ParticleSystem projectileParrySlash;
     public PMove pm;
     public EBehaviour eb;
     public GameObject player;
@@ -28,11 +29,16 @@ public class PCombat : MonoBehaviour
     public int comboIndex = 0;
 
     [Header("Parry Values")]
-    public float parryCD;
+    public float parryMCD;
+    public float parryPCD;
     public bool canParryM;
+    public bool canParryP;
+    public float parryMeleeHitDelay;
+    public float projectileParryForce;
 
     [Header("Validations")]
     public LayerMask enemyLayer;
+    public LayerMask projectileLayer;
     public bool isAttacking;
     public bool isComboing;
 
@@ -58,6 +64,7 @@ public class PCombat : MonoBehaviour
         orDodgeSpeed = pm.dodgeSpeed;
         orRotSmoothTime = pm.rotSmoothTime;
         canParryM = true;
+        canParryP = true;
     }
 
     // Update is called once per frame
@@ -111,7 +118,6 @@ public class PCombat : MonoBehaviour
 
         Invoke(nameof(attackHit), atkHitDelay);
 
-        //pm.turnOnActualSword();
         pm.pSpeed = pm.pSpeed * 0.05f;
         pm.rotSmoothTime = pm.rotSmoothTime + 1f;
         Invoke(nameof(resetAtk), atkHitDelay + isAttackingDelay);
@@ -134,9 +140,8 @@ public class PCombat : MonoBehaviour
     void resetAtk()
     {
         pm.rotSmoothTime = orRotSmoothTime;
-        pm.turnOnBackSword();
         pm.pSpeed = orSpeed;
-        isAttacking = false;
+        isAttackingReset();
     }
 
     void isAttackingReset()
@@ -148,9 +153,10 @@ public class PCombat : MonoBehaviour
     {
         if (Input.GetButton("ParryMelee") && canParryM && pm.isGround)
         {
-            shieldEffect.transform.DOScale(orShieldScale, 0.04f);
+            isAttacking = true;
 
-            // add parrying animation
+            shieldEffect.transform.DOScale(orShieldScale, 0.04f);
+            anim.SetTrigger("ParryM0");
 
             pm.canJump = false;
             pm.pSpeed = 0f;
@@ -169,14 +175,31 @@ public class PCombat : MonoBehaviour
 
         if (Input.GetButtonUp("ParryMelee") && canParryM && pm.isGround)
         {
-            shieldEffect.transform.DOScale(Vector3.zero, 0.5f);
-            slashEffect.Play();
-
             pm.canJump = true;
             canParryM = false;
 
+            anim.SetTrigger("ParryM1");
+
+            Invoke(nameof(parryHit), parryMeleeHitDelay);
             Invoke(nameof(speedReset), 0.25f);
-            Invoke(nameof(parryMReset), parryCD);
+            Invoke(nameof(parryMReset), parryMCD);
+        }
+    }
+
+    void parryHit()
+    {
+        slashEffect.Play();
+        shieldEffect.transform.DOScale(Vector3.zero, 0.5f);
+
+        Collider[] hitEnemy;
+        hitEnemy = Physics.OverlapSphere(atkPos.position, atkRange * 1.5f, enemyLayer);
+
+        foreach (Collider enemy in hitEnemy)
+        {
+            Debug.Log(enemy.name + " hit ");
+            eb = enemy.GetComponent<EBehaviour>();
+            //eb.ETakeDamage(atkDamageE);
+            //Debug.Log(++count);
         }
     }
 
@@ -192,14 +215,48 @@ public class PCombat : MonoBehaviour
     void parryMReset()
     {
         canParryM = true;
+        isAttacking = false;
     }
 
     void parryProjectile()
     {
-        if (Input.GetButton("ParryProjectile") && canParryM && pm.isGround)
+        if (Input.GetButtonDown("ParryProjectile") && canParryP && pm.isGround)
         {
+            isAttacking = true;
+            canParryP = false;
 
+            anim.SetTrigger("ParryP");
+            projectileParrySlash.Play();
+            projectileParry();
+
+            pm.pSpeed = 0f;
+            pm.dodgeSpeed = 0f;
+            pm.rotSmoothTime = 3f;
+            pm.canDodge = false;
+            pm.isGround = false;
+
+            Invoke(nameof(speedReset), 0.1f);
+            Invoke(nameof(parryPReset), parryPCD);
         }
+    }
+
+    void parryPReset()
+    {
+        canParryP = true;
+        isAttacking = false;
+    }
+
+    void projectileParry()
+    {
+        Collider[] hitProjectile;
+        hitProjectile = Physics.OverlapSphere(atkPos.position, atkRange, projectileLayer);
+
+        foreach (Collider projectile in hitProjectile)
+        {
+            Debug.Log(projectile.name + " hit ");
+            projectile.attachedRigidbody.AddForce(-projectile.attachedRigidbody.velocity * projectileParryForce, ForceMode.Impulse);
+        }
+
     }
 
     [System.Serializable]

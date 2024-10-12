@@ -89,20 +89,10 @@ public class PMove : MonoBehaviour
             anim.SetTrigger("Run");
             ctrl.Move(moveDir.normalized * pSpeed * Time.deltaTime);
             speed = moveDir * pSpeed;
-            turnOnBackSword();
-
-            // atk validation
-            if (pc.isAttacking)
-                turnOnActualSword();
-            else if (!pc.isAttacking)
-                turnOnBackSword();
 
         }
         else if (direction.magnitude <= 0.1f)
-        {
             anim.SetTrigger("Idle");
-            turnOnActualSword();
-        }
 
         // Jump
         if (isGround && canJump && Input.GetButtonDown("Jump"))
@@ -112,7 +102,6 @@ public class PMove : MonoBehaviour
 
             anim.SetTrigger("Run");
             anim.SetTrigger("Jump");
-            turnOnBackSword();
         }
 
         velo.y += gravity * Time.deltaTime;
@@ -145,6 +134,15 @@ public class PMove : MonoBehaviour
             StartCoroutine(dodgeIncrement());
             isDodgingCont = false;
         }
+
+        // Sword validation
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") ||
+            anim.GetCurrentAnimatorStateInfo(0).IsName("Run") ||
+            anim.GetCurrentAnimatorStateInfo(0).IsName("Dodge") ||
+            anim.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
+            turnOnBackSword();
+        else
+            turnOnActualSword();
     }
 
     IEnumerator dodgeMove(Vector3 dodge, float dodgeDist)
@@ -178,11 +176,6 @@ public class PMove : MonoBehaviour
         ctrl.Move(move * pSpeed * Time.deltaTime);
         canDodge = true;
     }
-
-    //void jumpReset()
-    //{
-    //    canJump = true;
-    //}
 
     public void turnOnActualSword()
     {
