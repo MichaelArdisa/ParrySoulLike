@@ -17,13 +17,7 @@ public class SpawnRock : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         Vector3 dirToPlayer = player.position - transform.position;
 
-        rb.AddForce(dirToPlayer * launchForce, ForceMode.Impulse);
-        //Vector3.MoveTowards(Vector3)
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //rb.AddForce(dirToPlayer * launchForce, ForceMode.Impulse);
+        rb.AddForce(new Vector3(dirToPlayer.x * launchForce, dirToPlayer.y + 4f, dirToPlayer.z * launchForce), ForceMode.Impulse);
     }
 }

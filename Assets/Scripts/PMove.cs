@@ -26,7 +26,8 @@ public class PMove : MonoBehaviour
     [Header("Ground Check")]
     public bool isGround;
     public bool canJump;
-    public float checkerSize;
+    //public float checkerSize;
+    public Vector3 checkerSize;
     public LayerMask groundMask;
 
     [Header("Dodge Check")]
@@ -65,13 +66,14 @@ public class PMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isGround = Physics.CheckSphere(groundCheck.position, checkerSize, groundMask);
+        //isGround = Physics.CheckSphere(groundCheck.position, checkerSize, groundMask);
+        isGround = Physics.CheckBox(groundCheck.position, checkerSize, this.transform.rotation, groundMask);
 
         if (isGround && velo.y < 0f)
             velo.y = -5f;
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        float x = Input.GetAxisRaw("Horizontal");
+        float z = Input.GetAxisRaw("Vertical");
         direction = new Vector3(x, 0f, z).normalized;
 
         if (direction.magnitude >= 0.1f)
@@ -89,7 +91,6 @@ public class PMove : MonoBehaviour
             anim.SetTrigger("Run");
             ctrl.Move(moveDir.normalized * pSpeed * Time.deltaTime);
             speed = moveDir * pSpeed;
-
         }
         else if (direction.magnitude <= 0.1f)
             anim.SetTrigger("Idle");
@@ -100,7 +101,6 @@ public class PMove : MonoBehaviour
             velo.y = Mathf.Sqrt(pJumpHeight * -2f * gravity);
             //canJump = false;
 
-            anim.SetTrigger("Run");
             anim.SetTrigger("Jump");
         }
 
@@ -189,5 +189,16 @@ public class PMove : MonoBehaviour
         backSword.SetActive(true);
         // add animation
         actualSword.SetActive(false);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck == null)
+            return;
+
+        //Gizmos.DrawWireSphere(groundCheck.position, checkerSize);
+        //Gizmos.DrawLine(this.transform.position, this.transform.position);
+
+        Gizmos.DrawWireCube(groundCheck.position , checkerSize);
     }
 }
