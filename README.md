@@ -1,4 +1,4 @@
-# ParrySoulLike
+# Feline Parrymaster
  
 ## 🔴 About This Project
 <!-- <p align="justify">CyberShield was originally developed as a submission for the Indie Game Ignite (IGI) Showcase and the GameToday Indie Game Competition, but we decided to expand the game even after the competition to further explore its potential. </p> -->
@@ -7,21 +7,26 @@
 
 ## 📋 Project Info
 
-| **Role** | **Team Size** | **Development Time** | **Engine** |
-|:-|:-|:-|:-|
-| Game Programmer | 3 | 2 weeks | Unity 2022|
+<b> Developed with Unity 2022 </b>
 
-<br>
+| **Role** | **Name** | **Development Time** 
+|:-|:-|:-|
+| Game Programmer | Michael Ardisa | 1 week |
+| 3D Artist | Yohanes Duns Scotus Aerotri Tunyanan | 1 week |
+| Game Designer | Steven Putra Adicandra | 1 week |
 
-## 👤 Meet the Team
-- Michael Ardisa (Programmer)
-- Steven Putra Adicandra (Designer)
-- Duns Scotus Aerotri Tunyanan (3D Artist)
+<details>
+  <summary> <b>My Contribution (Game programmer)</b> </summary>
+  
+  - Core mechanics
+  - Bug Fixing
+  
+</details>
 
 <br>
 
 ## ♦️About Game
-<!-- <p align="justify">CyberShield is an isometric top-down action RPG where players can battle a variety of cyber threats like malware, trojans, and other digital dangers in the computer world. The game introduces a unique gameplay experience by fusing cybersecurity concepts with fast-paced action mechanics.</p> -->
+<p align="justify">Feline Parrymaster is a third-person action-adventure game set in a mystical world. You play as a legendary sword-wielding cat who battles fierce enemies like orcs, using unique parrying skills to deflect both melee and projectile attacks with a mix of fast-paced combat. The game challenges players to master the art of parrying and become a true feline swordmaster.</p>
 
 <br>
 
@@ -31,64 +36,11 @@
 <br>
 
 ## ⚙️ Game Mechanics I Created
-<!-- ### Dash Mechanic
-<p align="justify">The dash mechanic in this game works by increasing the player's velocity, allowing them to change direction mid-dash rather than being locked into a straight line. The visual impact of the dash is enhanced by a trail effect, created using the Trail Renderer component. To make the dash feel smoother, the trail time is gradually reduced through a coroutine when the dash ends, giving the trail a retracting effect.</p>
+### Projectile Parry
+<p align="justify">Loremm</p>
 
-```
-void Update()
-{
-    ...        
-    // dash
-    if (Input.GetKeyDown(KeyCode.LeftShift) && !isDashing && !CD && activeScene.name != "MainMenu & Shop")
-    {
-        trail.enabled = true;
-        trail.time = 0.5f;
-
-        isDashing = true;
-        moveSpeed = moveSpeed * dashSpeed;
-        Invoke(nameof(dashReset), 0.2f);
-
-        CD = true;
-        Invoke(nameof(coolDown), dashCD + 0.2f);
-    }
-    ...
-}
-
-private void dashReset()
-{
-    moveSpeed = moveSpeed / dashSpeed;
-    isDashing = false;
-    StartCoroutine(trailReduce());
-}
-
-IEnumerator trailReduce()
-{
-    while (trail.time > 0)
-    {
-        trail.time = trail.time - 0.01f;
-        yield return new WaitForSeconds(0.01f);
-    }
-
-    trail.time = 0f;
-}
-```
-
-### Scriptable Objects Utilization for Weapon Data
-<p align="justify">Scriptable objects here are used to store key weapon data within the 'Resources' folder, providing a flexible way to manage and modify weapon attributes. This approach makes adding new weapons efficient and straightforward — simply create a new weapon asset file and adjust its data as needed.</p>
-
-```
-[CreateAssetMenu(fileName = "New Weapon", menuName = "Weapon")]
-public class Weapon : ScriptableObject
-{
-    public string weaponName;
-    public Vector3 atkPos;
-    public float atkRange;
-    public int atkDamage;
-    public float atkRate;
-    public float atkDelay;
-}
-```
--->
+### Autonatic Player Aim When Attacking
+<p align="justify">Loremm</p>
 
 <br>
 
@@ -96,7 +48,7 @@ public class Weapon : ScriptableObject
 
 |  Script       | Description                                                  |
 | ------------------- | ------------------------------------------------------------ |
-| `Weapon.cs` | Scriptable object class used to determine which data needs to be stored. |
+| `Weapon.cs` | loremm |
 | `EBehaviour.cs`  | Responsible for how the enemies behave around the player. |
 | `PMove.cs`  | Manages all isometric (skewed) player movements. |
 | `ECombat.cs`  | Manages the logic behind the enemies' combat. |
@@ -110,8 +62,10 @@ public class Weapon : ScriptableObject
 | **Key Binding** | **Function** |
 |:-|:-|
 | W, A, S, D | Basic movement |
-| Left-Click | Attack |
-| L-Shift | Dash |
+| Left-Click | Basic Attack |
+| Right-Click | Projectile Parry |
+| E | Close Range Parry |
+| L-Shift | Dodge |
 
 <br>
 
