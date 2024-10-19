@@ -1,7 +1,11 @@
 # Feline Parrymaster
- 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cbabf260-05d9-4b70-9d50-ddbdad679838" alt="Feline Parrymaster Gameplay" style="width: 150%;>
+</p>
+
 ## 🔴 About This Project
-<!-- <p align="justify">CyberShield was originally developed as a submission for the Indie Game Ignite (IGI) Showcase and the GameToday Indie Game Competition, but we decided to expand the game even after the competition to further explore its potential. </p> -->
+<p align="justify">loremmm</p>
 
 <br>
 
