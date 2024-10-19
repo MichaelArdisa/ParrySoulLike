@@ -1,7 +1,7 @@
 # Feline Parrymaster
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/cbabf260-05d9-4b70-9d50-ddbdad679838" alt="Feline Parrymaster Gameplay" style="width: 150%;>
+  <img src="https://github.com/user-attachments/assets/cbabf260-05d9-4b70-9d50-ddbdad679838" alt="Feline Parrymaster Gameplay" style="width: 600px;">
 </p>
 
 ## 🔴 About This Project
