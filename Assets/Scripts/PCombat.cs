@@ -13,12 +13,10 @@ public class PCombat : MonoBehaviour
     public PMove pm;
     public EBehaviour eb;
     public GameObject player;
-    //public GameObject Enemy;
     public Transform atkPos;
     public Transform aimPos;
     public Animator anim;
-    //public GameObject actualSword;
-    //public GameObject backSword;
+    public Transform playerAimPos;
 
     [Header("Atk Values")]
     public float atkRate;
@@ -27,6 +25,7 @@ public class PCombat : MonoBehaviour
     public float atkHitDelay;
     public float isAttackingDelay;
     public int comboIndex = 0;
+    public float playerAimRad;
 
     [Header("Parry Values")]
     public float parryMCD;
@@ -54,7 +53,7 @@ public class PCombat : MonoBehaviour
     {
         shieldEffect = GameObject.FindGameObjectWithTag("ShieldEffect");
         pm = GetComponent<PMove>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = gameObject;
 
         orShieldScale = shieldEffect.transform.localScale;
         shieldEffect.transform.localScale = Vector3.zero;
@@ -95,6 +94,7 @@ public class PCombat : MonoBehaviour
 
     void normalAttack()
     {
+        // combo validations
         isComboing = true;
 
         if (comboIndex >= combos.Count)
@@ -116,6 +116,7 @@ public class PCombat : MonoBehaviour
         comboIndex++;
         comboTimer = 0;
 
+        aimPlayerTo(enemyLayer);
         Invoke(nameof(attackHit), atkHitDelay);
 
         pm.pSpeed = pm.pSpeed * 0.05f;
@@ -222,6 +223,8 @@ public class PCombat : MonoBehaviour
     {
         if (Input.GetButtonDown("ParryProjectile") && canParryP && pm.isGround)
         {
+            aimPlayerTo(projectileLayer);
+
             isAttacking = true;
             canParryP = false;
 
@@ -256,7 +259,23 @@ public class PCombat : MonoBehaviour
             Debug.Log(projectile.name + " hit ");
             projectile.attachedRigidbody.AddForce(-projectile.attachedRigidbody.velocity * projectileParryForce, ForceMode.Impulse);
         }
+    }
 
+    void aimPlayerTo(LayerMask layer)
+    {
+        // automatic player aim
+
+        Collider[] coll;
+        coll = Physics.OverlapSphere(playerAimPos.position, playerAimRad, layer);
+
+        if (coll.Length > 0)
+        {
+            Vector3 dirToNearestColl = coll[0].transform.position - player.transform.position;
+            dirToNearestColl.y = 0;
+
+            Quaternion targetRotation = Quaternion.LookRotation(dirToNearestColl, Vector3.up);
+            transform.rotation = targetRotation;
+        }
     }
 
     [System.Serializable]
@@ -272,6 +291,10 @@ public class PCombat : MonoBehaviour
         if (atkPos == null)
             return;
 
+        if (playerAimPos == null)
+            return;
+
         Gizmos.DrawWireSphere(atkPos.position, atkRange);
+        Gizmos.DrawWireSphere(playerAimPos.position, playerAimRad);
     }
 }

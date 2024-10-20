@@ -189,6 +189,7 @@ public class PMove : MonoBehaviour
         backSword.SetActive(true);
         // add animation
         actualSword.SetActive(false);
+        Debug.Log("backSword");
     }
 
     private void OnDrawGizmosSelected()

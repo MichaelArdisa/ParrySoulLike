@@ -11,7 +11,6 @@ public class LaunchRock : MonoBehaviour
     private void Start()
     {
         launchPoint = GetComponent<Transform>();
-        rockAtHand.SetActive(false);
     }
 
     public void launchRock()

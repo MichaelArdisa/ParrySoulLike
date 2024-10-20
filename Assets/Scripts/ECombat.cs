@@ -52,7 +52,7 @@ public class ECombat : MonoBehaviour
         //atkParticle = atkPos.GetComponent<ParticleSystem>();
         eb = GetComponent<EBehaviour>();
         pb = GameObject.FindGameObjectWithTag("Player").GetComponent<PBehaviour>();
-        lr = GameObject.FindGameObjectWithTag("RockSpawnPoint").GetComponent<LaunchRock>();
+        lr = GetComponentInChildren<LaunchRock>();
 
         //orSpeed = eb.speed;
         orRotSpeed = eb.rotSpeed;
@@ -145,11 +145,6 @@ public class ECombat : MonoBehaviour
         lr.rockAtHand.SetActive(false);
         lr.launchRock();
     }
-
-    //public void resetRock()
-    //{
-    //    lr.rockAtHand.SetActive(false);
-    //}
 
     private void OnDrawGizmosSelected()
     {
