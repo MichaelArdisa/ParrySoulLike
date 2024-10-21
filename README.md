@@ -5,7 +5,7 @@
 </p>
 
 ## 🔴 About This Project
-<p align="justify">loremmm</p>
+<p align="justify">This project was developed as a way for me and my team to dive into the third-person action genre. Through this project, I gained valuable insights into the intricacies of game development, from crafting engaging combat mechanics to creating dynamic code for the purpose of futureproofing.</p>
 
 <br>
 
@@ -16,7 +16,7 @@
 | **Role** | **Name** | **Development Time** 
 |:-|:-|:-|
 | Game Programmer | Michael Ardisa | 1 week |
-| 3D Artist | Yohanes Duns Scotus Aerotri Tunyanan | 1 week |
+| 3D Character Artist | Yohanes Duns Scotus Aerotri Tunyanan | 1 week |
 | Game Designer | Steven Putra Adicandra | 1 week |
 
 <details>
@@ -35,7 +35,7 @@
 <br>
 
 ## 🎮 Gameplay
-<!-- <p align="justify">Players engage in intense combat, dodging and countering threats using weapons like machete, katana, and hammer. As they progress, they will face tougher enemies and adapt to new challenges. The game currently features 2 levels, and we plan to add more in future updates.</p> -->
+<p align="justify">Feline Parrymaster is all about mastering two types of parries: projectile parry and close-range parry! Play as a sword-wielding cat, deflecting enemy attacks with precise timing to defeat fierce foes like orcs. The game challenges you to perfect your parry skills and counter with powerful strikes.</p>
 
 <br>
 
@@ -43,7 +43,7 @@
 ### Projectile Parry
 <p align="justify">Loremm</p>
 
-### Autonatic Player Aim When Attacking
+### Automatic Player Aim When Attacking
 <p align="justify">Loremm</p>
 
 <br>
