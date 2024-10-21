@@ -17,7 +17,7 @@
 | - | - | - |
 | Game Programmer | Michael Ardisa | 1 week |
 | 3D Character Artist | Yohanes Duns Scotus Aerotri Tunyanan | 1 week |
-| Game Designer | Steven Putra Adicandra | 1 week |
+<!-- | Game Designer | Steven Putra Adicandra | 1 week | -->
 
 <details>
   <summary> <b>My Contribution (Game programmer)</b> </summary>
