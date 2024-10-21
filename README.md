@@ -53,7 +53,7 @@
 
 <p align="justify">
   <img src="https://github.com/user-attachments/assets/c4bdbab3-71fc-4c87-9a76-369f1f9d8fe0">
-  <img src="https://github.com/user-attachments/assets/29b074ff-56c0-4045-b221-4428a2f9e90f" style="width: 44%;">
+  <img src="https://github.com/user-attachments/assets/29b074ff-56c0-4045-b221-4428a2f9e90f" style="width: 40%;">
 </p>
 
 - Logic is located within the `PCombat.cs` script
