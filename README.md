@@ -13,8 +13,8 @@
 
 <b> Developed with Unity 2022 </b>
 
-| **Role** | **Name** | **Development Time** 
-|:-|:-|:-|
+| **Role** | **Name** | **Development Time** |
+| - | - | - |
 | Game Programmer | Michael Ardisa | 1 week |
 | 3D Character Artist | Yohanes Duns Scotus Aerotri Tunyanan | 1 week |
 | Game Designer | Steven Putra Adicandra | 1 week |
@@ -69,12 +69,11 @@
 ## 📜 Scripts
 
 |  Script       | Description                                                  |
-| ------------------- | ------------------------------------------------------------ |
-| `Weapon.cs` | loremm |
+| - | - |
+| `PCombat.cs`  | Manages the logic behind the player's combat (projectile parry, melee parry, combo system). |
+| `PMove.cs`  | Manages all player movements (run, dodge, jump, idle). |
 | `EBehaviour.cs`  | Responsible for how the enemies behave around the player. |
-| `PMove.cs`  | Manages all isometric (skewed) player movements. |
 | `ECombat.cs`  | Manages the logic behind the enemies' combat. |
-| `PCombat.cs`  | Manages the logic behind the player's combat. |
 | `etc`  |
 
 <br>
