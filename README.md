@@ -71,7 +71,7 @@
 |  Script       | Description                                                  |
 | - | - |
 | `PCombat.cs`  | Manages the logic behind the player's combat (projectile parry, melee parry, combo system). |
-| `PMove.cs`  | Manages all player movements (run, dodge, jump, idle). |
+| `PMove.cs`  | Manages third person player movements (run, dodge, jump, idle). |
 | `EBehaviour.cs`  | Responsible for how the enemies behave around the player. |
 | `ECombat.cs`  | Manages the logic behind the enemies' combat. |
 | `etc`  |
