@@ -41,11 +41,29 @@
 
 ## ⚙️ Game Mechanics I Created
 ### Projectile Parry
-<p align="justify">Loremm</p>
+![parryProjectile](https://github.com/user-attachments/assets/6d80f566-8dda-4725-94a9-0cb04950b986)
 
-### Automatic Player Aim When Attacking
-<p align="justify">Loremm</p>
+- Logic is located within the `PCombat.cs` script
+- It functions similarly to a normal attack but targets projectiles instead of enemies.
+- When the player performs this action, the system looks for incoming projectiles in the area.
+- Upon hitting a projectile, the force of the projectile is reversed.
+- The projectile is then launched back at the enemy who originally fired it.
 
+### Combo System
+
+<p align="justify">
+  <img src="https://github.com/user-attachments/assets/c4bdbab3-71fc-4c87-9a76-369f1f9d8fe0">
+  <img src="https://github.com/user-attachments/assets/29b074ff-56c0-4045-b221-4428a2f9e90f" style="width: 44%;">
+</p>
+
+- Logic is located within the `PCombat.cs` script
+- The code is dynamic, allowing for flexibility in the number of combos the player can perform.
+- A list of classes called "Combos" is used to handle the combo system, with the length of the list determining the amount of moves available to the player.
+- The system functions by starting a timer each time the player performs a normal attack.
+- If the player doesn't attack within a certain time, the combo is reset to the first move.
+- If the player continues attacking within the given time, the combo progresses to the next move in the list.
+- Once the combo reaches the final move, the sequence resets back to the first move, allowing the player to start the combo over.
+  
 <br>
 
 ## 📜 Scripts
