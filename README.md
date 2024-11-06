@@ -70,10 +70,10 @@
 
 |  Script       | Description                                                  |
 | - | - |
-| `PCombat.cs`  | Manages the logic behind the player's combat (projectile parry, melee parry, combo system). |
-| `PMove.cs`  | Manages third person player movements (run, dodge, jump, idle). |
-| `EBehaviour.cs`  | Responsible for how the enemies behave around the player. |
-| `ECombat.cs`  | Manages the logic behind the enemies' combat. |
+| <a href="https://github.com/MichaelArdisa/ParrySoulLike/tree/main/Assets/Scripts/PCombat.cs"> `PCombat.cs` </a> | Manages the logic behind the player's combat (projectile parry, melee parry, combo system). |
+| <a href="https://github.com/MichaelArdisa/ParrySoulLike/tree/main/Assets/Scripts/PMove.cs"> `PMove.cs` </a> | Manages third person player movements (run, dodge, jump, idle). |
+| <a href="https://github.com/MichaelArdisa/ParrySoulLike/tree/main/Assets/Scripts/EBehaviour.cs"> `EBehaviour.cs` </a> | Responsible for how the enemies behave around the player. |
+| <a href="https://github.com/MichaelArdisa/ParrySoulLike/tree/main/Assets/Scripts/ECombat.cs"> `ECombat.cs` </a> | Manages the logic behind the enemies' combat. |
 | `etc`  |
 
 <br>
